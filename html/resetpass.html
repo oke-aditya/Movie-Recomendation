@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Password</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="./css_folder/reset-pass.css">
+
+  
+</head>
+
+<body>
+  <div class="signupSection">
+  <!--<div class="info">
+    <h2>Mission Security</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    <p>The Future Is Here</p>
+  </div>-->
+  <form action="../user/reset" method="POST" class="signupForm" name="signupform">
+    <h2>Reset Password</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="Key"></label>
+        <input type="text" class="inputFields" id="key" name="reset_key" placeholder="Key" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="password"></label>
+        <input type="password" class="inputFields" id="password" name="new_pass" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+      </li>
+      <li>
+        <label for="confirm password"></label>
+        <input type="password" class="inputFields" id="confirm password" name="confirm_pass" placeholder="Confirm password" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="Submit" alt="Join" value="Submit">
+      </li>
+    </ul>
+  </form>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

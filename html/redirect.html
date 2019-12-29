@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css_folder/redirect-style.css">
+
+</head>
+<center><h1>Thanks You Have Successfully Registered!!</h1></center>
+<body>
+<!-- partial:index.partial.html -->
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo"/>
+    </filter>
+  </defs>
+</svg>
+<span class="button--bubble__container">
+   <form action="../user/redirect" method="POST" class="button button--bubble">
+    Login
+   </form>
+  <span class="button--bubble__effect-container">
+    <span class="circle top-left"></span>
+    <span class="circle top-left"></span>
+    <span class="circle top-left"></span>
+
+    <span class="button effect-button"></span>
+
+    <span class="circle bottom-right"></span>
+    <span class="circle bottom-right"></span>
+    <span class="circle bottom-right"></span>
+  </span>
+</span>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script><script  src="redirect-script.js"></script>
+
+</body>
+</html>
