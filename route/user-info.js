@@ -164,14 +164,14 @@ route.post('/user-auth',function(req,res){
                             service: "gmail",
                             port: 465,
                             auth: {
-                              user: 'ayushsinha126@gmail.com', // gmail address
-                              pass: 'dpeiwpbypsokgzqj' //gmail application password
+                              user: '<gmail address>',
+                              pass: '<gmail application password>'
                             }
                           });
                         let mailinfo = {
                             subject: `CRYPTS Password reset`,
                             to: email,
-                            from: `CRYPTS <ayushsinha126@gmail.com>`,
+                            from: `CRYPTS <enter your gmail address>`,
                             html: `
                               <h3>Hi,</h3>
                               <h3>Here is your password reset key</h3>
